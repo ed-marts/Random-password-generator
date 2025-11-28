@@ -1,6 +1,6 @@
 import random
 
-lowercase = "abcdefghijklmnopqrstuvwxyz"
+lowercase = "abcdefghijklmnopqrstuvwxyza"
 uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 numbers = "0123456789"
 symbols = "!@#$%^&*()-_=+[]{}|;:',.<>?/`~"
