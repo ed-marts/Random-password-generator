@@ -5,11 +5,23 @@ uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 numbers = "0123456789"
 symbols = "!@#$%^&*()-_=+[]{}|;:',.<>?/`~"
 
-allcharacters = lowercase + uppercase + numbers + symbols
+allcharacters = ""
 passwordlength = int(input("Enter the desired password length: "))
-if passwordlength < 8:
-    password = "".join(random.sample(allcharacters, passwordlength))
-    print("Generated password:", password)
+up = input("Should the password uppercase letters?: ")
 
-elif passwordlength > 8:
-    print("Your passowrd should have a maximium length of 8 characters.")
+if up.title() == "Yes":
+    uppercase += allcharacters
+
+
+
+
+num =input("Should the password contain numbers?: "  )
+
+while True:
+    if passwordlength >= 8:
+        password = "".join(random.sample(allcharacters, passwordlength))
+        print("Generated password:", password)
+
+    elif passwordlength < 5:
+        print("Your passowrd should have a minimum length of 8 characters.")
+
