@@ -9,7 +9,7 @@ while True:
 
     allcharacters = ""
     passwordlength = int(input("\nEnter the desired password length: "))
-    passwordtype = input("Select the password type: \n 1. Random \n 2. Custom \n --> " )
+    passwordtype = input("Select the password type: \n 1. Random \n 2. Custom \n ---> " )
 
     if passwordtype == "1":
         allcharacters = lowercase + uppercase + numbers + symbols
